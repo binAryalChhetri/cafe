@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* anchor tags */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* setting Header,section and footer width */
+
+.container,
+section {
+  width: 90%;
+  margin: 0em auto;
+}
+
+/* HEADER */
+
+.bincafe-nav-call-container {
+  font-family: ubuntu;
+
+  padding-top: 1.5em;
+}
+
+nav,
+.call-now {
+  font-size: 0.9rem;
+}
+
+header {
+  color: white;
+  height: 80vh;
+
+  background-image: url(Images/home_page.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.bincafe-nav-call-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style-type: none;
+  margin-left: 3em;
+}
+
+.call-now {
+  display: flex;
+  align-items: center;
+}
+
+.call-now img {
+  width: 15px;
+  margin-right: 1em;
+}
+
+header button {
+  cursor: pointer;
+  color: white;
+}
+
+.call-now button {
+  margin-left: 1.6em;
+  border-style: none;
+  padding: 0.8em 0.6em;
+  background-color: rgb(192, 60, 60);
+}
+
+.cafe-short-brief {
+  margin-top: 10em;
+}
+
+.cafe-short-brief p,
+.cafe-short-brief h2 {
+  margin-bottom: 1.3em;
+}
+
+.cafe-short-brief p {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.cafe-short-brief h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  text-shadow: 0 0 10px black;
+}
+
+.cafe-short-brief button {
+  background-color: transparent;
+  padding: 0.5em 0.9em;
+  border: solid white 2px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* section */
+
+/* history */
+
+section h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+
+  margin: 50px 0em 30px;
+}
+
+section p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(90, 88, 88);
+
+  margin-bottom: 1em;
+}
+
+.contentsAlign {
+  text-align: center;
+}
+
+.contentsAlign img {
+  width: 90%;
+
+  object-fit: cover;
+}
+
+.chef > p {
+  display: inline-block;
+  font-size: 1.2rem;
+  border-bottom: solid rgb(90, 88, 88) 2px;
+}
+
+.our-menu img {
+  margin-bottom: 1em;
+}
+
+.our-menu a {
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  padding: 0.6em 2em;
+  background-color: rgb(192, 60, 60);
+}
+
+/* Contact us */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0em auto;
+}
+
+.form input,
+.form textarea {
+  height: 2vh;
+  margin-bottom: 1.5em;
+
+  border-style: none none solid;
+  border-bottom-color: rgb(180, 180, 180);
+  border-bottom-width: 1px;
+
+  padding: 1em 1.5em;
+}
+
+.form button {
+  cursor: pointer;
+  font-size: 1rem;
+  height: 50px;
+  color: white;
+  width: 60%;
+  background-color: rgb(175, 36, 36);
+  margin: 0em auto;
+  border: none;
+}
+
+/* For Desktop */
+
+@media (min-width: 800px) {
+  .our-history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contents {
+    width: 50%;
+  }
+
+  .image {
+    width: 40%;
+    margin-top: 50px;
+  }
+  .image img {
+    width: 100%;
+  }
+
+  .images-chefs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .images-chefs img {
+    height: 250px;
+  }
+
+  /* menu items */
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .items img {
+    height: 250px;
+  }
+
+  .our-menu a {
+    display: inline-block;
+    margin-top: 1.5em;
+  }
+}
